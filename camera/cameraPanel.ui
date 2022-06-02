@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CameraPanel</class>
+ <widget class="QMainWindow" name="CameraPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Device"/>
+   <addaction name="action_Params"/>
+   <addaction name="separator"/>
+   <addaction name="action_Open"/>
+   <addaction name="action_Close"/>
+   <addaction name="separator"/>
+   <addaction name="action_Single"/>
+   <addaction name="action_Contious"/>
+   <addaction name="action_Save"/>
+   <addaction name="action_Stop"/>
+   <addaction name="separator"/>
+   <addaction name="action_ZoomIn"/>
+   <addaction name="action_ZoomOut"/>
+   <addaction name="action_ZoomFit"/>
+   <addaction name="separator"/>
+   <addaction name="action_ShowGrid"/>
+   <addaction name="action_Exit"/>
+   <addaction name="action_tile"/>
+   <addaction name="action_cascade"/>
+  </widget>
+  <action name="action_Exit">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/exit.png</normaloff>:/image/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/save.png</normaloff>:/image/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/connect.png</normaloff>:/image/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+   <property name="toolTip">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/disconnect.png</normaloff>:/image/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="action_Single">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/snap.png</normaloff>:/image/snap.png</iconset>
+   </property>
+   <property name="text">
+    <string>single shot</string>
+   </property>
+  </action>
+  <action name="action_Contious">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/grab.png</normaloff>:/image/grab.png</iconset>
+   </property>
+   <property name="text">
+    <string>continuous shooting</string>
+   </property>
+   <property name="toolTip">
+    <string>continuous shooting</string>
+   </property>
+  </action>
+  <action name="action_Stop">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/stop.png</normaloff>:/image/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>stop</string>
+   </property>
+   <property name="toolTip">
+    <string>stop</string>
+   </property>
+  </action>
+  <action name="action_ZoomIn">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/zoom_in.png</normaloff>:/image/zoom_in.png</iconset>
+   </property>
+   <property name="text">
+    <string>zoom in</string>
+   </property>
+  </action>
+  <action name="action_ZoomOut">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/zoom_out.png</normaloff>:/image/zoom_out.png</iconset>
+   </property>
+   <property name="text">
+    <string>zoom out</string>
+   </property>
+  </action>
+  <action name="action_ZoomFit">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/zoom_fit.png</normaloff>:/image/zoom_fit.png</iconset>
+   </property>
+   <property name="text">
+    <string>fit</string>
+   </property>
+  </action>
+  <action name="action_ShowGrid">
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/grid.png</normaloff>:/image/grid.png</iconset>
+   </property>
+   <property name="text">
+    <string>show grid</string>
+   </property>
+  </action>
+  <action name="action_Device">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/icon.png</normaloff>:/image/icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Device</string>
+   </property>
+   <property name="toolTip">
+    <string>Device</string>
+   </property>
+  </action>
+  <action name="action_Params">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../image.qrc">
+     <normaloff>:/image/device.png</normaloff>:/image/device.png</iconset>
+   </property>
+   <property name="text">
+    <string>Params</string>
+   </property>
+   <property name="toolTip">
+    <string>Params</string>
+   </property>
+  </action>
+  <action name="action_tile">
+   <property name="text">
+    <string>tile</string>
+   </property>
+   <property name="toolTip">
+    <string>tile</string>
+   </property>
+  </action>
+  <action name="action_cascade">
+   <property name="text">
+    <string>fold</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
